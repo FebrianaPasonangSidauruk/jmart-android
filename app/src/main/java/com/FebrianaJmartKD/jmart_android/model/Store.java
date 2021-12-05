@@ -1,7 +1,8 @@
 package com.FebrianaJmartKD.jmart_android.model;
 
 public class Store {
-    String address;
-    String name;
-    String phoneNumber;
+    public String name;
+    public double balance;
+    public String address;
+    public String phoneNumber;
 }

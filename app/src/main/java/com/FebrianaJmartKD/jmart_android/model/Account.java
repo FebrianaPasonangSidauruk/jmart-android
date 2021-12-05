@@ -1,9 +1,16 @@
 package com.FebrianaJmartKD.jmart_android.model;
 
 public class Account extends Serializable{
-    double balance;
-    String email;
-    String name;
-    String password;
-    String store;
+    public double balance;
+    public String email;
+    public String name;
+    public String password;
+    public Store store;
+
+    public Account(String name, String email, String password, double balance){
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.balance = balance;
+    }
 }
