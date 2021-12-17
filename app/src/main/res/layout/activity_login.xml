@@ -37,7 +37,7 @@
         android:layout_width="120dp"
         android:layout_height="48dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="#D8D3D3"
+        android:backgroundTint="#B7D7DC"
         android:text="LOGIN"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/tv_registerNow"

@@ -1,5 +1,12 @@
 package com.FebrianaJmartKD.jmart_android;
 
+/**
+ * class Create Product Activity
+ *
+ * @author Febriana Pasonang Sidauruk
+ *
+ */
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;

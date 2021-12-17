@@ -1,5 +1,12 @@
 package com.FebrianaJmartKD.jmart_android;
 
+/**
+ * class About Me Activity
+ *
+ * @author Febriana Pasonang Sidauruk
+ *
+ */
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -36,6 +43,7 @@ public class AboutMeActivity extends AppCompatActivity {
     private TextView tv_userBalance;
     private Button btnTopUp;
     private Button btnRegisterStore;
+    private Button btnInvoiceHistory;
     private EditText et_topUpAmount;
     private CardView cv_storeExists;
 
@@ -65,7 +73,15 @@ public class AboutMeActivity extends AppCompatActivity {
         tv_userName.setText(LoginActivity.getLoggedAccount().name);
         tv_userEmail.setText(LoginActivity.getLoggedAccount().email);
         tv_userBalance.setText(String.valueOf(LoginActivity.getLoggedAccount().balance));
-
+        //Button to redirect to InvoiceHistory Activity
+        btnInvoiceHistory = findViewById(R.id.btnInvoiceHistory);
+        btnInvoiceHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), InvoiceHistoryActivity.class);
+                startActivity(intent);
+            }
+        });
         btnTopUp = findViewById(R.id.btnTopUp);
         btnTopUp.setOnClickListener(new View.OnClickListener() {
             @Override

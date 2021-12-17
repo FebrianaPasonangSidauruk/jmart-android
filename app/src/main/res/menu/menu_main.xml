@@ -7,14 +7,12 @@
         android:icon="@drawable/ic_baseline_search_24"
         android:title="Search"
         app:actionViewClass="androidx.appcompat.widget.SearchView"
-        app:showAsAction="collapseActionView|always"
-        />
+        app:showAsAction="collapseActionView|always" />
     <item
         android:id="@+id/menu_add"
         android:icon="@drawable/ic_baseline_add_box_24"
         android:title="Add"
-        app:showAsAction="collapseActionView|always"
-        />
+        app:showAsAction="collapseActionView|always" />
     <item
         android:id="@+id/menu_aboutme"
         android:icon="@drawable/ic_baseline_person_24"

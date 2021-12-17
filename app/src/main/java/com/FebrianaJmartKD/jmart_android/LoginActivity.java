@@ -1,5 +1,12 @@
 package com.FebrianaJmartKD.jmart_android;
 
+/**
+ * class Login Activity
+ *
+ * @author Febriana Pasonang Sidauruk
+ *
+ */
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;

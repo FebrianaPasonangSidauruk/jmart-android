@@ -13,11 +13,22 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".CreateProductActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Create Product"/>
         <activity
             android:name=".AboutMeActivity"
             android:exported="false"
             android:label="About Me" />
+        <activity
+            android:name=".InvoiceHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductDetailActivity"
+            android:exported="false"
+            android:label="Product Detail" />
         <activity
             android:name=".MainActivity"
             android:exported="false"

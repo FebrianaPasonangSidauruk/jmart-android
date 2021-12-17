@@ -3,15 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.12777777777777777" />
+        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/drawable/ic_baseline_add_box_24.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.12777777777777777" />
         <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/drawable/ic_search_black_24dp.xml" value="0.12777777777777777" />
         <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/activity_about_me.xml" value="0.2375" />
         <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/activity_create_product.xml" value="0.2390625" />
+        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/activity_invoice_history.xml" value="0.136" />
         <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/activity_login.xml" value="0.1796875" />
-        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/activity_payment.xml" value="0.136" />
+        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/activity_product_detail.xml" value="0.1" />
+        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/activity_register.xml" value="0.2" />
         <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/recyclerview_adapter.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/recyclerview_row.xml" value="0.264" />
+        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/recyclerview_row2.xml" value="0.264" />
+        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/recyclerview_rowtransactions.xml" value="0.536" />
         <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/layout/recyclerviewadapter.xml" value="0.2546875" />
-        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/menu/menu_main.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/FEBRIANA/jmart-android/app/src/main/res/menu/menu_main.xml" value="0.6" />
       </map>
     </option>
   </component>

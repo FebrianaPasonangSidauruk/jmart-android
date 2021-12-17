@@ -1,5 +1,12 @@
 package com.FebrianaJmartKD.jmart_android;
 
+/**
+ * class Main Activity
+ *
+ * @author Febriana Pasonang Sidauruk
+ *
+ */
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -40,11 +47,10 @@ import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
 
-
-import com.FebrianaJmartKD.jmart_android.model.Account;
 import com.FebrianaJmartKD.jmart_android.model.Product;
 
 public class MainActivity extends AppCompatActivity implements RecyclerViewAdapter.ItemClickListener {
+    public static final String EXTRA_PRODUCTID = "com.FebrianaJmartKD.jmart_android.EXTRA_PRODUCTID";
     private static final Gson gson = new Gson();
     RecyclerViewAdapter adapter;
     private TabLayout mainTabLayout;
@@ -75,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
         mainTabLayout = findViewById(R.id.mainTabLayout);
         cv_product = findViewById(R.id.cv_product);
         cv_filter = findViewById(R.id.cv_filter);
+        //Tab Selector Listener
         mainTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener(){
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -101,6 +108,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
             @Override
             public void onTabReselected(TabLayout.Tab tab) { }
         });
+        //Request to Fetch Product Lists
         List<Product> productNames = new ArrayList<>();
         page = 0;
         fetchProduct(productNames, page, queue, false);
@@ -134,7 +142,13 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
         btnGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                page = Integer.parseInt(et_page.getText().toString());
+                try{
+                    page = Integer.parseInt(et_page.getText().toString());
+                }catch (NumberFormatException e){
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "input a valid page number.", Toast.LENGTH_LONG).show();
+                    page = 0;
+                }
                 fetchProduct(productNames, page, queue, true);
             }
         });
@@ -171,6 +185,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
                                 productNames.add(gson.fromJson(reader, Product.class));
                             }
                             adapter.refresh(productNames);
+                            reader.close();
                         } catch (Exception e) {
                             e.printStackTrace();
                             Toast.makeText(getApplicationContext(), "Filter product unsuccessful, error occurred", Toast.LENGTH_LONG).show();
@@ -234,7 +249,10 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewAdapt
     //RecycleView Item ClickListener
     @Override
     public void onItemClick(View view, int position) {
-        Toast.makeText(getApplicationContext(), "Testing click product", Toast.LENGTH_LONG).show();
+        int clickedItemId = adapter.getClickedItemId(position);
+        Intent intent = new Intent(getApplicationContext(), ProductDetailActivity.class);
+        intent.putExtra(EXTRA_PRODUCTID, clickedItemId);
+        startActivity(intent);
     }
     //Menu
     @Override
